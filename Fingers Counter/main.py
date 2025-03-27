@@ -54,7 +54,7 @@ with mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7) a
                 
                 cv2.putText(frame, f'Finger: {num_fingers}', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
-        cv2.imshow("Finger Counting", frame)
+        cv2.imshow("Fingers Counting", frame)
 
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
